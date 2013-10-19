@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oF0-8P-HWe"/>
+                        <viewControllerLayoutGuide type="bottom" id="uJj-M3-rhP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0LJ-UB-GsQ">
+                                <rect key="frame" x="0.0" y="249" width="77" height="70"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="IwL-rU-daC"/>
+                                    <constraint firstAttribute="height" constant="70" id="j3y-DJ-wq9"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6a-fx-AQR">
+                                <rect key="frame" x="137" y="518" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Toggle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleAlignment:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zwe-Tj-cxs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0LJ-UB-GsQ" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="7Br-G5-GPV"/>
+                            <constraint firstAttribute="bottom" secondItem="x6a-fx-AQR" secondAttribute="bottom" constant="20" symbolic="YES" id="G5q-ZQ-ie1"/>
+                            <constraint firstItem="0LJ-UB-GsQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="TZP-qz-OQ0"/>
+                            <constraint firstItem="x6a-fx-AQR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="sFK-f5-7D9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alignedView" destination="0LJ-UB-GsQ" id="yV6-LC-Akz"/>
+                        <outletCollection property="xConstraints" destination="TZP-qz-OQ0" id="kuU-J4-fmU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
